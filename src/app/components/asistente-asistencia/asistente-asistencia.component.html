@@ -1,0 +1,35 @@
+<div class="row">
+    <div class="col-sm-2">
+        <app-lateral-asistente></app-lateral-asistente>
+    </div>
+</div>
+
+<body>
+  <h1 text-aling="center" class="h3 mb-4 text-gray-800">Registra tu asistencia</h1>
+  <hr>
+<br>
+<div class="card shadow mb-4">
+  <br>
+  <div class="form-floating">
+    <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
+      <option selected>Selecciona un evento</option>
+      <option value="1">Evento 1</option>
+      <option value="2">Evento 2</option>
+      <option value="3">Evento 3</option>
+    </select>
+    <label for="floatingSelect">Eventos</label>
+  </div>
+  <form action="/action_page.php">
+    <div class="mb-3 mt-3">
+      <label for="nombre" class="form-label">Nombre:</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Nombre" name="nombre">
+    </div>
+    <div class="mb-3 mt-3">
+      <label for="nombre" class="form-label">Correo Electronico:</label>
+      <input type="text" class="form-control" id="nombre" placeholder="Correo Electronico" name="nombre">
+    </div>
+    <button id="button" type="submit" class="btn btn-primary">Aceptar</button>
+  </form><br>
+</div>
+
+</body>

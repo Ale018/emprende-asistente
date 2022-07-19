@@ -12,6 +12,9 @@ import { PiePaginaComponent } from './components/pie-pagina/pie-pagina.component
 import { RegistroComponent } from './components/registro/registro.component';
 import { LateralComponent } from './components/lateral/lateral.component';
 import { EmprendeComponent } from './components/emprende/emprende.component';
+import { LateralAsistenteComponent } from './components/lateral-asistente/lateral-asistente.component';
+import { AsistenteAsistenciaComponent } from './components/asistente-asistencia/asistente-asistencia.component';
+import { AsistenteInscripcionComponent } from './components/asistente-inscripcion/asistente-inscripcion.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +27,10 @@ import { EmprendeComponent } from './components/emprende/emprende.component';
     PiePaginaComponent,
     RegistroComponent,
     LateralComponent,
-    EmprendeComponent
+    EmprendeComponent,
+    LateralAsistenteComponent,
+    AsistenteAsistenciaComponent,
+    AsistenteInscripcionComponent
   ],
   imports: [
     BrowserModule,
