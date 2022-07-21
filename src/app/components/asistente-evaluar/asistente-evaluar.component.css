@@ -6,9 +6,18 @@ body{
     left:0;
     width: 70%;
 }
-
+#estrellas{
+    text-align: center;
+    align-content: center;
+}
 .container .star-widget input{
     display: none;
+}
+.container{
+    width: 400px;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
 }
 .star-widget label{
     font-size: 40px;
@@ -27,4 +36,6 @@ input:checked ~ label{
 input#rate-5:checked ~ label{
     color: #fd4;
     text-shadow:  0 0 20px #952;
+    text-align: center;
+    align-content: center;
 }

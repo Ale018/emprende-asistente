@@ -7,11 +7,9 @@
 <body >
   <h1 text-aling="center" class="h3 mb-4 text-gray-800">Inscripción</h1>
   <hr>
-
-
   <div class="card shadow mb-4">
 
-    <form action="/action_page.php" class="was-validated">
+    <form id="form" action="/action_page.php" class="form">
       <div class="form-floating">
         <select class="form-select" id="floatingSelect" aria-label="Floating label select example">
           <option selected>Selecciona un evento</option>
@@ -21,20 +19,63 @@
         </select>
         <label for="floatingSelect">Eventos</label>
       </div>
+
       <div class="mb-3 mt-3">
-        <label for="uname" class="form-label">Nombre(s) y Apellido(s):</label>
-        <input type="text" class="form-control" id="uname" placeholder="Ingresa tu nombre(s) y apellido(s)" name="uname"
+        <label for="uname" class="form-label">Nombre(s):</label>
+        <input type="text" class="form-control" id="uname" placeholder="Ingresa tu nombre(s)" name="uname"
+          required>
+        <label for="uname" class="form-label">Apellido Paterno:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Ingresa tu apellido paterno)" name="uname"
+          required>
+          <label for="uname" class="form-label">Apellido Materno:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Ingresa tu apellido materno" name="uname"
           required>
         <div class="valid-feedback">Valido</div>
         <div class="invalid-feedback">Llena este campo</div>
       </div>
+
       <div class="mb-3 mt-3">
-        <label for="uname" class="form-label">Correo Electronico:</label>
-        <input type="text" class="form-control" id="uname" placeholder="Ingresa un correo electronico" name="uname"
+        <label for="email" class="form-label">Correo Electronico:</label>
+        <input type="text" class="form-control" id="email" placeholder="Ingresa un correo electronico" name="email"
           required>
         <div class="valid-feedback">Valido</div>
         <div class="invalid-feedback">Llena este campo</div>
       </div>
+       
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Campus:</label>
+        <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">Campus "Dolores Hidalgo"</option>
+        <option value="0">Campus "Victoria"</option>
+      </select>
+      </div>
+      
+      <div class="mb-3 mt-3">
+        <label for="email" class="form-label">Programa Educativo:</label>
+        <select class="form-select" aria-label="Default select example">
+        <option selected></option>
+        <option value="1">Escolarizado</option>
+        <option value="0">Semiescolarizado</option>
+      </select>
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Clave del grupo:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Ingresa la clave del grupo" name="uname"
+          required>
+        <div class="valid-feedback">Valido</div>
+        <div class="invalid-feedback">Llena este campo</div>
+      </div>
+
+      <div class="mb-3 mt-3">
+        <label for="uname" class="form-label">Clave de la carrera:</label>
+        <input type="text" class="form-control" id="uname" placeholder="Ingresa la clave de la carrera" name="uname"
+          required>
+        <div class="valid-feedback">Valido</div>
+        <div class="invalid-feedback">Llena este campo</div>
+      </div>
+
       <div class="mb-3 mt-3">
         <label for="uname" class="form-label">Numero de Telefono:</label>
         <input type="text" class="form-control" id="uname" placeholder="Ingresa tu numero de telefono" name="uname"
@@ -42,22 +83,15 @@
         <div class="valid-feedback">Valido</div>
         <div class="invalid-feedback">Llena este campo</div>
       </div>
-      <div class="mb-3 mt-3">
-        <label for="uname" class="form-label">Institucion:</label>
-        <input type="text" class="form-control" id="uname" placeholder="Ingresa tu el nombre de tu institucion" name="uname"
-          required>
-        <div class="valid-feedback">Valido</div>
-        <div class="invalid-feedback">Llena este campo</div>
+
+      <div id="botones" class="btn-group" role="group" aria-label="Basic radio toggle button group">
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+        <label class="btn btn-outline-primary" for="btnradio1">Guardar</label>
+        <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+        <label class="btn btn-outline-warning" for="btnradio2">Cancelar</label>
       </div>
     </form>
-    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
-      <label class="btn btn-outline-primary" for="btnradio1">Guardar</label>
-    
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-      <label class="btn btn-outline-warning" for="btnradio2">Cancelar</label>
-    </div>
+  </div><br><br><br>
+  
+</body>
 
-  </div>
-
-</body><br><br><br><br><br>
